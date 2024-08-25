@@ -1,5 +1,11 @@
-const palindromes = function () {
+const palindromes = function (word) { 
+    word = word.replace(/\W/g, '');
+    word = word.toLowerCase();
 
+    if (word === word.split('').reverse().join('')){
+        return true;
+    }
+    return false;
 };
 
 // Do not edit below this line
