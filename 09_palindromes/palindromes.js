@@ -1,5 +1,5 @@
 const palindromes = function (word) { 
-    word = word.replace(/\W/g, '');
+    word = word.replace(/\W/, '');
     word = word.toLowerCase();
 
     if (word === word.split('').reverse().join('')){
